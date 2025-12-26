@@ -22,7 +22,7 @@
                             <span class="material-symbols-outlined">
                                 home
                             </span>
-                            <p class="sr-only">Website Title</p>
+                            <p class="sr-only">Moneyfy</p>
                         </a>
                     </div>
                     <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
@@ -30,11 +30,11 @@
                             class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
                             href="#">How it works</a>
                         <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
-                            href="#">Pricing</a>
+                            href="#">About Us</a>
                     </div>
                     <div class="flex items-center justify-end gap-3">
                         <a class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
-                            href="/login">Sign in</a>
+                            href="/register">Sign in</a>
                         <a class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                             href="/login">Login</a>
                     </div>
@@ -55,13 +55,13 @@
                                 <span class="block xl:inline">Take control of</span>
                                 <span class="block xl:inline">your money today.</span>
                             </h1>
-                            <p class="mx-auto text-base text-white sm:max-w-md lg:text-xl md:max-w-3xl">It's never
-                                been
-                                easier to build beautiful websites that convey your message and tell your story.</p>
+                            <p class="mx-auto text-base text-white sm:max-w-md lg:text-xl md:max-w-3xl">Track every
+                                income and expense. Monefy makes it simple to see where your money goes and build better
+                                financial habits.</p>
                             <div class="relative flex flex-col sm:flex-row sm:space-x-4">
-                                <a href="#_"
-                                    class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
-                                    Try It Free
+                                <a href="/login"
+                                    class="flex items-center w-full px-6 py-3 mb-3 text-sm text-white bg-indigo-600 rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
+                                    Login
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round">
@@ -86,7 +86,7 @@
             </div>
         </section>
 
-        <section id="features" class="container mx-auto px-4 space-y-20 bg-slate-50 py-8 md:py-12 lg:py-20">
+        <section id="features" class="container mx-auto px-8 space-y-20 bg-slate-50 py-8 md:py-12 lg:py-20">
 
             <div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
 
@@ -94,8 +94,7 @@
                     understand your money</h2>
 
                 <p class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                    The product can personalize user experiences by understanding individual preferences and tailoring
-                    recommendations or content based on user behavior and historical data.
+                    From recording income to analyzing expenses, everything is designed to give you financial clarity.
                 </p>
 
             </div>
@@ -111,9 +110,9 @@
                             </path>
                         </svg>
                         <div class="space-y-2">
-                            <h3 class="font-bold">Next.js 13</h3>
-                            <p class="text-sm text-muted-foreground">App dir, Routing, Layouts, Loading UI and API
-                                routes.
+                            <h3 class="font-bold">Record your income and expenses</h3>
+                            <p class="text-sm text-muted-foreground">Log every transaction in one place to keep your
+                                finances organized.
                             </p>
                         </div>
                     </div>
@@ -128,8 +127,8 @@
                             </path>
                         </svg>
                         <div class="space-y-2">
-                            <h3 class="font-bold">React 18</h3>
-                            <p class="text-sm">Server and Client Components. Use hook.</p>
+                            <h3 class="font-bold">Monitor where money goes</h3>
+                            <p class="text-sm">Review your transaction history to understand your spending patterns.</p>
                         </div>
                     </div>
                 </div>
@@ -143,8 +142,9 @@
                             </path>
                         </svg>
                         <div class="space-y-2">
-                            <h3 class="font-bold">Database</h3>
-                            <p class="text-sm text-muted-foreground">ORM using Prisma and deployed on PlanetScale.</p>
+                            <h3 class="font-bold">Visualize Your Financial Progress</h3>
+                            <p class="text-sm text-muted-foreground">See clear charts and summaries to make smarter
+                                financial decisions.</p>
                         </div>
                     </div>
                 </div>
@@ -152,719 +152,431 @@
         </section>
         <section class="py-24 relative">
             <div class="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
-                <h2 class="font-manrope font-bold text-4xl text-black text-center mb-11">People Love Us</h2>
-                <div class="grid grid-cols-12 py-6 border-y border-gray-200 mb-11">
-                    <div class="col-span-12 lg:col-span-10 ">
-                        <h5 class="font-manrope font-semibold text-2xl leading-9 text-black text-center">Reviews
-                            <span
-                                class="lg:hidden font-manrope font-semibold text-2xl leading-9 text-black text-center">
-                                &
-                                Rating</span>
-                        </h5>
+                <div class="w-full">
+                    <h2 class="font-manrope font-bold text-4xl text-black mb-8 text-center">Our customer reviews
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 xl:grid-cols-2 gap-11 pb-11 border-b border-gray-100 max-xl:max-w-2xl max-xl:mx-auto">
+                        <div class="box flex flex-col gap-y-4 w-full ">
+                            <div class="flex items-center w-full">
+                                <p class="font-medium text-lg text-black mr-0.5">5</p>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_12042_8589)">
+                                        <path
+                                            d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_12042_8589">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="h-2 w-full sm:min-w-[278px] rounded-3xl bg-amber-50 ml-5 mr-3">
+                                    <span class="h-full w-[30%] rounded-3xl bg-amber-400 flex"></span>
+                                </p>
+                                <p class="font-medium text-lg  text-black mr-0.5">989</p>
+                            </div>
+                            <div class="flex items-center w-full">
+                                <p class="font-medium text-lg text-black mr-0.5">4</p>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_12042_8589)">
+                                        <path
+                                            d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_12042_8589">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="h-2 w-full xl:min-w-[278px] rounded-3xl bg-amber-50 ml-5 mr-3">
+                                    <span class="h-full w-[40%] rounded-3xl bg-amber-400 flex"></span>
+                                </p>
+                                <p class="font-medium text-lg text-black mr-0.5">4.5K</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="font-medium text-lg text-black mr-0.5">3</p>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_12042_8589)">
+                                        <path
+                                            d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_12042_8589">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="h-2 w-full xl:min-w-[278px] rounded-3xl bg-amber-50 ml-5 mr-3">
+                                    <span class="h-full w-[20%] rounded-3xl bg-amber-400 flex"></span>
+                                </p>
+                                <p class="font-medium text-lg text-black mr-0.5">50</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="font-medium text-lg text-black mr-0.5">2</p>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_12042_8589)">
+                                        <path
+                                            d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_12042_8589">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="h-2 w-full xl:min-w-[278px] rounded-3xl bg-amber-50 ml-5 mr-3">
+                                    <span class="h-full w-[16%] rounded-3xl bg-amber-400 flex"></span>
+                                </p>
+                                <p class="font-medium text-lg text-black mr-0.5">16</p>
+                            </div>
+                            <div class="flex items-center">
+                                <p class="font-medium text-lg text-black mr-0.5">1</p>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_12042_8589)">
+                                        <path
+                                            d="M9.10326 2.31699C9.47008 1.57374 10.5299 1.57374 10.8967 2.31699L12.7063 5.98347C12.8519 6.27862 13.1335 6.48319 13.4592 6.53051L17.5054 7.11846C18.3256 7.23765 18.6531 8.24562 18.0596 8.82416L15.1318 11.6781C14.8961 11.9079 14.7885 12.2389 14.8442 12.5632L15.5353 16.5931C15.6754 17.41 14.818 18.033 14.0844 17.6473L10.4653 15.7446C10.174 15.5915 9.82598 15.5915 9.53466 15.7446L5.91562 17.6473C5.18199 18.033 4.32456 17.41 4.46467 16.5931L5.15585 12.5632C5.21148 12.2389 5.10393 11.9079 4.86825 11.6781L1.94038 8.82416C1.34687 8.24562 1.67438 7.23765 2.4946 7.11846L6.54081 6.53051C6.86652 6.48319 7.14808 6.27862 7.29374 5.98347L9.10326 2.31699Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_12042_8589">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="h-2 w-full xl:min-w-[278px] rounded-3xl bg-amber-50 ml-5 mr-3">
+                                    <span class="h-full w-[8%] rounded-3xl bg-amber-400 flex"></span>
+                                </p>
+                                <p class="font-medium text-lg py-[1px] text-black mr-0.5">8</p>
+                            </div>
+                        </div>
+                        <div class="p-8 bg-amber-50 rounded-3xl flex items-center justify-center flex-col">
+                            <h2 class="font-manrope font-bold text-5xl text-amber-400 mb-6">
+                                4.3</h2>
+                            <div class="flex items-center justify-center gap-2 sm:gap-6 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_13624_2608)">
+                                        <path
+                                            d="M21.1033 2.9166C21.4701 2.17335 22.5299 2.17335 22.8967 2.9166L28.233 13.729C28.3786 14.0241 28.6602 14.2287 28.9859 14.276L40.9181 16.0099C41.7383 16.1291 42.0658 17.137 41.4723 17.7156L32.8381 26.1318C32.6024 26.3616 32.4949 26.6926 32.5505 27.017L34.5888 38.9009C34.7289 39.7178 33.8714 40.3408 33.1378 39.9551L22.4653 34.3443C22.174 34.1911 21.826 34.1911 21.5347 34.3443L10.8622 39.9551C10.1286 40.3408 9.27114 39.7178 9.41125 38.9009L11.4495 27.017C11.5051 26.6926 11.3976 26.3616 11.1619 26.1318L2.52771 17.7156C1.93419 17.137 2.2617 16.1291 3.08192 16.0099L15.0141 14.276C15.3398 14.2287 15.6214 14.0241 15.767 13.729L21.1033 2.9166Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13624_2608">
+                                            <rect width="44" height="44" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_13624_2608)">
+                                        <path
+                                            d="M21.1033 2.9166C21.4701 2.17335 22.5299 2.17335 22.8967 2.9166L28.233 13.729C28.3786 14.0241 28.6602 14.2287 28.9859 14.276L40.9181 16.0099C41.7383 16.1291 42.0658 17.137 41.4723 17.7156L32.8381 26.1318C32.6024 26.3616 32.4949 26.6926 32.5505 27.017L34.5888 38.9009C34.7289 39.7178 33.8714 40.3408 33.1378 39.9551L22.4653 34.3443C22.174 34.1911 21.826 34.1911 21.5347 34.3443L10.8622 39.9551C10.1286 40.3408 9.27114 39.7178 9.41125 38.9009L11.4495 27.017C11.5051 26.6926 11.3976 26.3616 11.1619 26.1318L2.52771 17.7156C1.93419 17.137 2.2617 16.1291 3.08192 16.0099L15.0141 14.276C15.3398 14.2287 15.6214 14.0241 15.767 13.729L21.1033 2.9166Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13624_2608">
+                                            <rect width="44" height="44" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_13624_2608)">
+                                        <path
+                                            d="M21.1033 2.9166C21.4701 2.17335 22.5299 2.17335 22.8967 2.9166L28.233 13.729C28.3786 14.0241 28.6602 14.2287 28.9859 14.276L40.9181 16.0099C41.7383 16.1291 42.0658 17.137 41.4723 17.7156L32.8381 26.1318C32.6024 26.3616 32.4949 26.6926 32.5505 27.017L34.5888 38.9009C34.7289 39.7178 33.8714 40.3408 33.1378 39.9551L22.4653 34.3443C22.174 34.1911 21.826 34.1911 21.5347 34.3443L10.8622 39.9551C10.1286 40.3408 9.27114 39.7178 9.41125 38.9009L11.4495 27.017C11.5051 26.6926 11.3976 26.3616 11.1619 26.1318L2.52771 17.7156C1.93419 17.137 2.2617 16.1291 3.08192 16.0099L15.0141 14.276C15.3398 14.2287 15.6214 14.0241 15.767 13.729L21.1033 2.9166Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13624_2608">
+                                            <rect width="44" height="44" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_13624_2608)">
+                                        <path
+                                            d="M21.1033 2.9166C21.4701 2.17335 22.5299 2.17335 22.8967 2.9166L28.233 13.729C28.3786 14.0241 28.6602 14.2287 28.9859 14.276L40.9181 16.0099C41.7383 16.1291 42.0658 17.137 41.4723 17.7156L32.8381 26.1318C32.6024 26.3616 32.4949 26.6926 32.5505 27.017L34.5888 38.9009C34.7289 39.7178 33.8714 40.3408 33.1378 39.9551L22.4653 34.3443C22.174 34.1911 21.826 34.1911 21.5347 34.3443L10.8622 39.9551C10.1286 40.3408 9.27114 39.7178 9.41125 38.9009L11.4495 27.017C11.5051 26.6926 11.3976 26.3616 11.1619 26.1318L2.52771 17.7156C1.93419 17.137 2.2617 16.1291 3.08192 16.0099L15.0141 14.276C15.3398 14.2287 15.6214 14.0241 15.767 13.729L21.1033 2.9166Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13624_2608">
+                                            <rect width="44" height="44" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_13624_2608)">
+                                        <path
+                                            d="M21.1033 2.9166C21.4701 2.17335 22.5299 2.17335 22.8967 2.9166L28.233 13.729C28.3786 14.0241 28.6602 14.2287 28.9859 14.276L40.9181 16.0099C41.7383 16.1291 42.0658 17.137 41.4723 17.7156L32.8381 26.1318C32.6024 26.3616 32.4949 26.6926 32.5505 27.017L34.5888 38.9009C34.7289 39.7178 33.8714 40.3408 33.1378 39.9551L22.4653 34.3443C22.174 34.1911 21.826 34.1911 21.5347 34.3443L10.8622 39.9551C10.1286 40.3408 9.27114 39.7178 9.41125 38.9009L11.4495 27.017C11.5051 26.6926 11.3976 26.3616 11.1619 26.1318L2.52771 17.7156C1.93419 17.137 2.2617 16.1291 3.08192 16.0099L15.0141 14.276C15.3398 14.2287 15.6214 14.0241 15.767 13.729L21.1033 2.9166Z"
+                                            fill="#FBBF24" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13624_2608">
+                                            <rect width="44" height="44" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="font-medium text-xl leading-8 text-gray-900 text-center">46 Ratings</p>
+                        </div>
                     </div>
-                    <div class="col-span-12 lg:col-span-2 max-lg:hidden">
-                        <h5 class="font-manrope font-semibold text-2xl leading-9 text-black text-center">Rating</h5>
+
+                    <div class="pt-11 pb-8 border-b border-gray-100 max-xl:max-w-2xl max-xl:mx-auto">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="font-manrope font-semibold text-xl sm:text-2xl leading-9 text-black mb-6">Outstanding
+                            Experience!!!
+                        </h3>
+                        <div class="flex sm:items-center flex-col min-[400px]:flex-row justify-between gap-5 mb-4">
+                            <div class="flex items-center gap-3">
+                                <img src="https://pagedone.io/asset/uploads/1704349572.png" alt="John image"
+                                    class="w-8 h-8 rounded-full object-cover">
+                                <h6 class="font-semibold text-lg leading-8 text-indigo-600 ">John Watson</h6>
+                            </div>
+                            <p class="font-normal text-lg leading-8 text-gray-400">Nov 01, 2023</p>
+                        </div>
+                        <p class="font-normal text-l leading-8 text-gray-400 max-xl:text-justify">One of the standout
+                            features of Pagedone is its intuitive and user-friendly interface. Navigating through the
+                            system feels natural, and the layout makes it easy to locate and utilize various design
+                            elements. This is particularly beneficial for designers looking to streamline their
+                            workflow.</p>
+                    </div>
+                    <div class="pt-8 max-xl:max-w-2xl max-xl:mx-auto">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <g clip-path="url(#clip0_13624_2892)">
+                                    <path
+                                        d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
+                                        fill="#FBBF24" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13624_2892">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="font-manrope font-semibold text-xl sm:text-2xl leading-9 text-black mb-6">Pagedone's
+                            design system seamlessly bridges the gap between designers and developers!
+                        </h3>
+                        <div class="flex sm:items-center flex-col min-[400px]:flex-row justify-between gap-5 mb-4">
+                            <div class="flex items-center gap-3">
+                                <img src="https://pagedone.io/asset/uploads/1704351103.png" alt="Robert image"
+                                    class="w-8 h-8 rounded-full object-cover">
+                                <h6 class="font-semibold text-lg leading-8 text-indigo-600">Robert Karmazov</h6>
+                            </div>
+                            <p class="font-normal text-lg leading-8 text-gray-400">Nov 01, 2023</p>
+                        </div>
+                        <p class="font-normal text-l leading-8 text-gray-400 max-xl:text-justify">Pagedone doesn't
+                            disappoint when it comes to the variety and richness of its design components. From
+                            pre-built templates to customizable elements, the system caters to both beginners and
+                            seasoned designers. The extensive library ensures a diverse range of options to bring
+                            creative visions to life.</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-8">
+            </div>
+            </div>
+        </section>
 
-                    <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
-                        <div class="col-span-12 lg:col-span-10 ">
-                            <div class="sm:flex gap-6">
-                                <img src="https://pagedone.io/asset/uploads/1704364459.png" alt="Robert image"
-                                    class="w-32 h-32 rounded-full object-cover">
-                                <div class="text">
-                                    <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
-                                    <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">One of the
-                                        standout features of Pagedone is its intuitive and user-friendly interface.
-                                        Navigating through the system feels natural, and the layout makes it easy to
-                                        locate
-                                        and utilize various design elements. This is particularly beneficial for
-                                        designers
-                                        looking to streamline their workflow. </p>
-                                    <div class="flex items-center justify-between">
-                                        <div class="cursor-pointers flex items-center gap-2">
-                                            <a href="javascript:;"
-                                                class="font-semibold text-lg cursor-pointer leading-8 text-indigo-600 whitespace-nowrap">
-                                                View & Reply</a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                                viewBox="0 0 22 22" fill="none">
-                                                <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        <p
-                                            class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                            Nov 01, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-span-12 lg:col-span-2 max-lg:hidden flex lg:items-center flex-row lg:flex-col justify-center max-lg:pt-6 ">
-                            <div class="flex items-center gap-2 lg:justify-between w-full mb-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov
-                                01,
-                                2023</p>
-                        </div>
-                    </div>
-                    <div class="pb-8 border-b border-gray-100 w-full"></div>
-                    <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
-                        <div class="col-span-12 lg:col-span-10 ">
-                            <div class="sm:flex gap-6">
-                                <img src="https://pagedone.io/asset/uploads/1704364533.png" alt="Robert image"
-                                    class="w-32 h-32 rounded-full object-cover">
-                                <div class="text">
-                                    <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
-                                    <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Pagedone
-                                        excels in
-                                        addressing the demand for responsive design. Its features ensure that designs
-                                        not
-                                        only look great on desktop but also seamlessly adapt to various screen sizes,
-                                        providing a consistent user experience across devices.
+        <section>
+            <div class="mx-auto bg-[#112250] max-w-8xl px-4 py-12 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-lg text-center">
+                    <h2 class="text-3xl/tight font-bold text-gray-900 sm:text-4xl dark:text-white">
+                        Features for growth
+                    </h2>
 
-                                    </p>
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex items-center gap-2">
-                                            <a href="javascript:;"
-                                                class="font-semibold text-lg cursor-pointer leading-8 text-indigo-600 whitespace-nowrap">
-                                                View & Reply</a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                                viewBox="0 0 22 22" fill="none">
-                                                <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        <p
-                                            class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                            Nov 01, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <p class="mt-4 text-lg text-pretty text-gray-700 dark:text-gray-200">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis tenetur, nemo quam
+                        voluptas sunt impedit dolorem asperiores aliquid doloribus fugit.
+                    </p>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
                         <div
-                            class="col-span-12 lg:col-span-2 max-lg:hidden flex lg:items-center flex-row lg:flex-col justify-center max-lg:pt-6 ">
-                            <div class="flex items-center gap-2 lg:justify-between w-full mb-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov
-                                01,
-                                2023</p>
+                            class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"></path>
+                            </svg>
                         </div>
+
+                        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">High performance</h3>
+
+                        <p class="mt-2 text-pretty text-gray-700 dark:text-gray-200">
+                            Lightning-quick load times optimized for every device
+                        </p>
                     </div>
-                    <div class="pb-8 border-b border-gray-100 w-full"></div>
-                    <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
-                        <div class="col-span-12 lg:col-span-10 ">
-                            <div class="sm:flex gap-6">
-                                <img src="https://pagedone.io/asset/uploads/1704364549.png" alt="Robert image"
-                                    class="w-32 h-32 rounded-full object-cover">
-                                <div class="text">
-                                    <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
-                                    <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Collaboration
-                                        is
-                                        made seamless with Pagedone's collaboration tools. Whether working within a team
-                                        or
-                                        seeking client feedback, the system facilitates effective communication and
-                                        real-time collaboration, enhancing the overall design process.
-                                    </p>
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex items-center gap-2">
-                                            <a href="javascript:;"
-                                                class="font-semibold text-lg cursor-pointer leading-8 text-indigo-600 whitespace-nowrap">
-                                                View & Reply</a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                                viewBox="0 0 22 22" fill="none">
-                                                <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        <p
-                                            class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                            Nov 01, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
                         <div
-                            class="col-span-12 lg:col-span-2 max-lg:hidden flex lg:items-center flex-row lg:flex-col justify-center max-lg:pt-6 ">
-                            <div class="flex items-center gap-2 lg:justify-between w-full mb-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov
-                                01,
-                                2023</p>
+                            class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z">
+                                </path>
+                            </svg>
                         </div>
+
+                        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+                            Enterprise security
+                        </h3>
+
+                        <p class="mt-2 text-pretty text-gray-700 dark:text-gray-200">
+                            Enterprise-grade security built into every layer
+                        </p>
                     </div>
-                    <div class="pb-8 border-b border-gray-100 w-full"></div>
-                    <div class="grid grid-cols-12 max-w-sm sm:max-w-full mx-auto">
-                        <div class="col-span-12 lg:col-span-10 ">
-                            <div class="sm:flex gap-6">
-                                <img src="https://pagedone.io/asset/uploads/1704364560.png" alt="Robert image"
-                                    class="w-32 h-32 rounded-full object-cover">
-                                <div class="text">
-                                    <p class="font-medium text-lg leading-8 text-gray-900 mb-2">Robert Karmazov</p>
-                                    <div class="flex lg:hidden items-center gap-2 lg:justify-between w-full mb-5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            viewBox="0 0 30 30" fill="none">
-                                            <g clip-path="url(#clip0_13624_2090)">
-                                                <path
-                                                    d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                                    fill="#FBBF24" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_13624_2090">
-                                                    <rect width="30" height="30" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <p class="font-normal text-base leading-7 text-gray-400 mb-4 lg:pr-8">Pagedone
-                                        doesn't
-                                        disappoint when it comes to the variety and richness of its design components.
-                                        From
-                                        pre-built templates to customizable elements, the system caters to both
-                                        beginners
-                                        and seasoned designers. The extensive library ensures a diverse range of options
-                                        to
-                                        bring creative visions to life. </p>
-                                    <div class="flex items-center justify-between">
-                                        <div class="flex items-center gap-2">
-                                            <a href="javascript:;"
-                                                class="font-semibold text-lg leading-8 text-indigo-600 whitespace-nowrap cursor-pointer">
-                                                View & Reply</a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                                viewBox="0 0 22 22" fill="none">
-                                                <path d="M8.25324 5.49609L13.7535 10.9963L8.25 16.4998" stroke="#4F46E5"
-                                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        <p
-                                            class="lg:hidden font-medium text-sm leading-7 text-gray-400 lg:text-center whitespace-nowrap">
-                                            Nov 01, 2023</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="rounded-lg border border-gray-200 p-6 dark:border-gray-700">
                         <div
-                            class="col-span-12 lg:col-span-2 max-lg:hidden flex lg:items-center flex-row lg:flex-col justify-center max-lg:pt-6 ">
-                            <div class="flex items-center gap-2 lg:justify-between w-full mb-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_13624_2090)">
-                                        <path
-                                            d="M14.1033 2.56698C14.4701 1.82374 15.5299 1.82374 15.8967 2.56699L19.1757 9.21093C19.3214 9.50607 19.6029 9.71064 19.9287 9.75797L27.2607 10.8234C28.0809 10.9426 28.4084 11.9505 27.8149 12.5291L22.5094 17.7007C22.2737 17.9304 22.1662 18.2614 22.2218 18.5858L23.4743 25.8882C23.6144 26.7051 22.7569 27.3281 22.0233 26.9424L15.4653 23.4946C15.174 23.3415 14.826 23.3415 14.5347 23.4946L7.9767 26.9424C7.24307 27.3281 6.38563 26.7051 6.52574 25.8882L7.7782 18.5858C7.83384 18.2614 7.72629 17.9304 7.49061 17.7007L2.1851 12.5291C1.59159 11.9505 1.91909 10.9426 2.73931 10.8234L10.0713 9.75797C10.3971 9.71064 10.6786 9.50607 10.8243 9.21093L14.1033 2.56698Z"
-                                            fill="#FBBF24" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_13624_2090">
-                                            <rect width="30" height="30" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <p class="font-medium text-lg leading-8 text-gray-400 lg:text-center whitespace-nowrap">Nov
-                                01,
-                                2023</p>
+                            class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5">
+                                </path>
+                            </svg>
                         </div>
+
+                        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">
+                            Highly configurable
+                        </h3>
+
+                        <p class="mt-2 text-pretty text-gray-700 dark:text-gray-200">
+                            Adapt every aspect to match your brand and needs
+                        </p>
                     </div>
                 </div>
             </div>
