@@ -23,8 +23,6 @@
         {{-- Main Content --}}
         <div class="flex-1 flex flex-col">
 
-            {{-- Navigation --}}
-
             {{-- Header --}}
             @isset($header)
                 <header class="bg-white shadow">

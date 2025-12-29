@@ -59,7 +59,7 @@
     <x-app-layout>
         @include('layouts.sidebar')
         <main class="pl-64">
-            @include('layouts.navigation')
+            @include ('layouts.navigation')
 
             <div class="bg-gray-50 font-sans">
                 <section>
@@ -68,15 +68,17 @@
                         <header class="flex justify-between items-center mb-8 animate-fadeIn"
                             style="animation-delay: 0.1s">
                             <h1 class="text-3xl font-bold text-indigo-700 transform transition duration-500">
-                                <div>{{ Auth::user()->name }}</div>
+                                <div>
+                                    <h1>Hallo, {{ Auth::user()->name }}</h1>
+                                </div>
                             </h1>
                         </header>
 
                         <!-- Earnings Card with counter animation -->
                         <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl p-6 text-white mb-8 shadow-lg transform transition duration-500 hover:scale-[1.01] card-hover animate-fadeIn"
                             style="animation-delay: 0.2s">
-                            <h2 class="text-lg font-medium mb-1">All Earnings</h2>
-                            <p class="text-3xl font-bold mb-4" id="earnings-counter">$0</p>
+                            <h2 class="text-lg font-medium mb-1">Saldo Sekarang</h2>
+                            <p class="text-3xl font-bold mb-4" id="earnings-counter">Rp0</p>
                             <div class="flex justify-between items-center">
                                 <span class="text-indigo-100">IDX changes on profit</span>
                                 <span
@@ -195,6 +197,108 @@
                         <div class="card">@include('layouts.chart')</div>
                     </div>
                 </section>
+                <section>
+                    <div class="col-span-12 rounded-2xl border border-gray-200 bg-white pt-4"
+                        x-data="transactionsTable()">
+
+                        <!-- Header -->
+                        <div class="flex items-center justify-between px-6 mb-4">
+                            <h3 class="text-lg font-semibold text-gray-800">
+                                Latest Transactions
+                            </h3>
+
+                            <input type="text" x-model="searchQuery" placeholder="Search..."
+                                class="h-[42px] rounded-lg border px-4 text-sm" />
+                        </div>
+
+                        <!-- Table -->
+                        <div class="overflow-x-auto px-6">
+                            <table class="min-w-full">
+                                <thead>
+                                    <tr class="border-y">
+                                        <th class="py-3 text-left">Name</th>
+                                        <th class="py-3 text-left">Date</th>
+                                        <th class="py-3 text-left">Price</th>
+                                        <th class="py-3 text-left">Category</th>
+                                        <th class="py-3 text-left">Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="divide-y">
+                                    <template x-for="(item, index) in paginatedData" :key="index">
+                                        <tr>
+                                            <td class="py-4">
+                                                <div class="flex items-center gap-3">
+                                                    <img :src="item.image" class="w-8 h-8">
+                                                    <span x-text="item.name"></span>
+                                                </div>
+                                            </td>
+
+                                            <td x-text="item.date"></td>
+                                            <td x-text="item.price"></td>
+                                            <td x-text="item.category"></td>
+
+                                            <td>
+                                                <span x-text="item.status" class="px-2 py-1 rounded-full text-xs"
+                                                    :class="{
+                                    'bg-green-100 text-green-600': item.status === 'Success',
+                                    'bg-yellow-100 text-yellow-600': item.status === 'Pending',
+                                    'bg-red-100 text-red-600': item.status === 'Failed'
+                                }"></span>
+                                            </td>
+
+                                            <!-- 🔽 ACTION DROPDOWN -->
+                                            <td class="py-4">
+                                                <div class="relative flex justify-center" x-data="actionDropdown()"
+                                                    @click.away="isOpen = false">
+                                                    <!-- Button -->
+                                                    <button x-ref="button" @click="toggle"
+                                                        class="text-gray-500 hover:text-gray-700">
+                                                        <svg width="24" height="24" fill="currentColor"
+                                                            viewBox="0 0 24 24">
+                                                            <path
+                                                                d="M6 12a2 2 0 110-4 2 2 0 010 4zm6 0a2 2 0 110-4 2 2 0 010 4zm6 0a2 2 0 110-4 2 2 0 010 4z" />
+                                                        </svg>
+                                                    </button>
+
+                                                    <!-- Dropdown -->
+                                                    <div x-ref="content" class="z-50 fixed">
+                                                        <div x-show="isOpen" x-cloak
+                                                            class="w-40 rounded-xl border bg-white p-2 shadow-lg">
+                                                            <a href="#"
+                                                                class="block px-3 py-2 text-sm hover:bg-gray-100 rounded-lg">
+                                                                View More
+                                                            </a>
+                                                            <a href="#"
+                                                                class="block px-3 py-2 text-sm text-red-600 hover:bg-red-50 rounded-lg">
+                                                                Delete
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="flex justify-between px-6 py-4 border-t">
+                            <button @click="prevPage" :disabled="currentPage === 1">
+                                Previous
+                            </button>
+
+                            <span x-text="`Page ${currentPage} of ${totalPages}`"></span>
+
+                            <button @click="nextPage" :disabled="currentPage === totalPages">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+
+                </section>
             </div>
         </main>
     </x-app-layout>
@@ -232,8 +336,8 @@
         // Initialize animations when page loads
         document.addEventListener('DOMContentLoaded', () => {
             // Animate counters
-            animateValue('earnings-counter', 0, 30200, 2000, '$');
-            animateValue('revenue-counter', 0, 4230, 1500, '$');
+            animateValue('earnings-counter', 0, 400000, 2000, 'Rp');
+            animateValue('revenue-counter', 0, 4230, 1500, 'Rp');
             animateValue('sales-percent', 0, 3, 1000);
 
             // Animate progress bars after a slight delay
@@ -251,6 +355,108 @@
         });
     </script>
     <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
+    <script>
+        function transactionsTable() {
+            return {
+                tableData: [
+                    {
+                        name: "Bought PYPL",
+                        image: "/images/brand/brand-08.svg",
+                        date: "Nov 23, 01:00 PM",
+                        price: "$2,567.88",
+                        category: "Finance",
+                        status: "Success",
+                    },
+                    {
+                        name: "Bought AAPL",
+                        image: "/images/brand/brand-07.svg",
+                        date: "Nov 22, 09:00 PM",
+                        price: "$3,987.45",
+                        category: "Technology",
+                        status: "Pending",
+                    },
+                    {
+                        name: "Sell AMZN",
+                        image: "/images/brand/brand-10.svg",
+                        date: "Feb 35, 08:00 PM",
+                        price: "$5,698.55",
+                        category: "E-commerce",
+                        status: "Failed",
+                    },
+                ],
+
+                itemsPerPage: 5,
+                currentPage: 1,
+                searchQuery: "",
+
+                get filteredData() {
+                    if (!this.searchQuery) return this.tableData;
+                    return this.tableData.filter(item =>
+                        item.name.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
+                        item.category.toLowerCase().includes(this.searchQuery.toLowerCase())
+                    );
+                },
+
+                get totalPages() {
+                    return Math.ceil(this.filteredData.length / this.itemsPerPage);
+                },
+
+                get paginatedData() {
+                    const start = (this.currentPage - 1) * this.itemsPerPage;
+                    return this.filteredData.slice(start, start + this.itemsPerPage);
+                },
+
+                prevPage() {
+                    if (this.currentPage > 1) this.currentPage--;
+                },
+
+                nextPage() {
+                    if (this.currentPage < this.totalPages) this.currentPage++;
+                },
+
+                init() {
+                    this.$watch("searchQuery", () => {
+                        this.currentPage = 1;
+                    });
+                },
+            };
+        }
+
+        /* 🔽 DROPDOWN ACTION COMPONENT */
+        function actionDropdown() {
+            return {
+                isOpen: false,
+                popperInstance: null,
+
+                init() {
+                    this.$nextTick(() => {
+                        this.popperInstance = createPopper(
+                            this.$refs.button,
+                            this.$refs.content,
+                            {
+                                placement: 'bottom-end',
+                                strategy: 'fixed',
+                                modifiers: [
+                                    {
+                                        name: 'offset',
+                                        options: { offset: [0, 4] },
+                                    },
+                                ],
+                            }
+                        );
+                    });
+                },
+
+                toggle() {
+                    this.isOpen = !this.isOpen;
+                    this.popperInstance && this.popperInstance.update();
+                },
+            };
+        }
+    </script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
 
 </html>
