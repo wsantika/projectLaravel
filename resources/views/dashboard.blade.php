@@ -58,7 +58,7 @@
 <body>
     <x-app-layout>
         @include('layouts.sidebar')
-        <main class="pl-64">
+        <main class="flex-1 md:ml-64 bg-gray-100">
             @include ('layouts.navigation')
 
             <div class="bg-gray-50 font-sans">
@@ -192,9 +192,14 @@
                     </div>
                 </section>
                 <section>
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="card">@include('layouts.chart')</div>
-                        <div class="card">@include('layouts.chart')</div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="card min-w-0 overflow-hidden">
+                            @include('layouts.chart')
+                        </div>
+
+                        <div class="card min-w-0 overflow-hidden">
+                            @include('layouts.chart')
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -230,7 +235,6 @@
                                         <tr>
                                             <td class="py-4">
                                                 <div class="flex items-center gap-3">
-                                                    <img :src="item.image" class="w-8 h-8">
                                                     <span x-text="item.name"></span>
                                                 </div>
                                             </td>
@@ -363,7 +367,6 @@
                 tableData: [
                     {
                         name: "Bought PYPL",
-                        image: "/images/brand/brand-08.svg",
                         date: "Nov 23, 01:00 PM",
                         price: "$2,567.88",
                         category: "Finance",
@@ -371,7 +374,6 @@
                     },
                     {
                         name: "Bought AAPL",
-                        image: "/images/brand/brand-07.svg",
                         date: "Nov 22, 09:00 PM",
                         price: "$3,987.45",
                         category: "Technology",
@@ -379,7 +381,6 @@
                     },
                     {
                         name: "Sell AMZN",
-                        image: "/images/brand/brand-10.svg",
                         date: "Feb 35, 08:00 PM",
                         price: "$5,698.55",
                         category: "E-commerce",
