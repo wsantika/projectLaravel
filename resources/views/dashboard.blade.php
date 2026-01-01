@@ -252,14 +252,15 @@
                                 }"></span>
                                             </td>
 
-                                            <!-- 🔽 ACTION DROPDOWN -->
-                                            <td class="py-4">
-                                                <div class="relative flex justify-center" x-data="actionDropdown()"
-                                                    @click.away="isOpen = false">
+                                            <!-- ACTION DROPDOWN -->
+                                            <td class="py-4 text-right">
+                                                <div class="relative inline-block" x-data="{ open: false }"
+                                                    @click.away="open = false">
+
                                                     <!-- Button -->
-                                                    <button x-ref="button" @click="toggle"
-                                                        class="text-gray-500 hover:text-gray-700">
-                                                        <svg width="24" height="24" fill="currentColor"
+                                                    <button @click="open = !open"
+                                                        class="p-2 rounded-full hover:bg-gray-100">
+                                                        <svg width="20" height="20" fill="currentColor"
                                                             viewBox="0 0 24 24">
                                                             <path
                                                                 d="M6 12a2 2 0 110-4 2 2 0 010 4zm6 0a2 2 0 110-4 2 2 0 010 4zm6 0a2 2 0 110-4 2 2 0 010 4z" />
@@ -267,21 +268,21 @@
                                                     </button>
 
                                                     <!-- Dropdown -->
-                                                    <div x-ref="content" class="z-50 fixed">
-                                                        <div x-show="isOpen" x-cloak
-                                                            class="w-40 rounded-xl border bg-white p-2 shadow-lg">
-                                                            <a href="#"
-                                                                class="block px-3 py-2 text-sm hover:bg-gray-100 rounded-lg">
-                                                                View More
-                                                            </a>
-                                                            <a href="#"
-                                                                class="block px-3 py-2 text-sm text-red-600 hover:bg-red-50 rounded-lg">
-                                                                Delete
-                                                            </a>
-                                                        </div>
+                                                    <div x-show="open" x-transition x-cloak
+                                                        class="absolute right-0 mt-2 w-40 rounded-xl border bg-white shadow-lg z-[9999]">
+
+                                                        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">
+                                                            Edit
+                                                        </a>
+
+                                                        <a href="#"
+                                                            class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50">
+                                                            Delete
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </td>
+
                                         </tr>
                                     </template>
                                 </tbody>
@@ -301,11 +302,15 @@
                             </button>
                         </div>
                     </div>
-
                 </section>
             </div>
         </main>
     </x-app-layout>
+
+    <!-- Scripts -->
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
 
     <script>
         // Counter animations
@@ -358,8 +363,7 @@
             });
         });
     </script>
-    <script src="./node_modules/preline/dist/preline.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+
 
     <script>
         function transactionsTable() {
@@ -457,7 +461,6 @@
             };
         }
     </script>
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
 
 </html>
